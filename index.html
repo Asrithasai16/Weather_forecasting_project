@@ -5,22 +5,22 @@
    </div>
    <div class="main">
       <input type="text" placeholder="Enter Place...."/>
-      <img src="pictures/search.png" />
+      <img src="assets/search.png" />
    </div>
    <center>
       <div class="weather">
-      <img src="pictures/weather.png" class="weather_img">
+      <img src="assets/weather.png" class="weather_img">
       <div>
          <h1 class="temp">23<sup>o</sup></h1>
          <h2 class="city">Rajahmundry</h2>
       </div>
       <div class="bottom">
          <div class="mid">
-         <img src="pictures/wind.png">
+         <img src="assets/wind.png">
          <h1 class="wind">20km/h</h1>
          </div>
          <div class="mid">
-            <img src="pictures/humidity.png">
+            <img src="assets/humidity.png">
             <h1 class="humidity">20%</h1>
          </div>
       </div>
@@ -47,15 +47,15 @@
        document.querySelector(".humidity").innerHTML=data.main.humidity+"%"
  
        if(data.weather[0].main==="Clear"){
-         weatherimg.src="pictures/clear.png"
+         weatherimg.src="assets/clear.png"
      }else if(data.weather[0].main==="Haze"){
-         weatherimg.src="pictures/haze.png"
+         weatherimg.src="assets/haze.png"
      }else if(data.weather[0].main==="Clouds"){
-         weatherimg.src="pictures/clouds.png"
+         weatherimg.src="assets/clouds.png"
      }else if(data.weather[0].main==="rain"){
-         weatherimg.src="pictures/rain.png"
+         weatherimg.src="assets/rain.png"
      }else if(data.weather[0].main==="Mist"){
-         weatherimg.src="pictures/mists.png"
+         weatherimg.src="assets/mists.png"
      }
 
      document.querySelector('.weather').style.display='block'
